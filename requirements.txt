@@ -1,0 +1,5 @@
+# This project currently uses only built-in Python modules.
+# Add any future dependencies here, one per line.
+# Example:
+# numpy>=1.20.0
+# Pillow>=9.0.0
