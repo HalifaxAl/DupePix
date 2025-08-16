@@ -1,52 +1,94 @@
-# DupePix
+# DupePix: A Photo Management Tool
 
-DupePix is a command-line tool designed to help you find and manage duplicate photos in your digital photo collection. It works by generating unique cryptographic hashes for each photo and then analyzing these hashes to identify duplicates. The tool provides a detailed report, including the total storage space consumed by duplicate files, to assist you in cleaning up your photo library.
+DupePix is a full-stack application designed to help you find and manage duplicate photos on your computer. The application uses a Python backend to scan a specified directory, calculate a unique hash for each photo, and identify duplicates. The results are then sent to a React and TypeScript frontend for a user-friendly experience.
 
 ## Features
 
--   **Hash Generation**: Recursively scans a specified directory to generate a unique SHA256 hash for each photo.
--   **File Metadata**: Captures essential metadata, including file size and path, for each photo.
--   **Duplicate Detection**: Identifies all duplicate photos based on their unique hashes.
--   **Comprehensive Reports**: Generates a detailed JSON report that includes:
-    -   A summary of the analysis (total files, unique photos, duplicates).
-    -   The total storage space that can be reclaimed.
-    -   The path of the original photo for each duplicate, allowing for easy verification.
-    -   A timestamp to ensure unique report names.
+- **Splash Screen:** A branded splash screen is displayed on startup for 5 seconds.
+- **Directory Selection:** Select a local directory to scan for photos.
+- **Photo Hashing:** The backend invokes `create_photo_hash_list.py` to process photos and generate hashes.
+- **Backend API:** A Flask backend provides a RESTful API to communicate with the frontend.
+- **User Feedback:** The frontend provides real-time status updates on the scanning process.
 
 ## Getting Started
 
 ### Prerequisites
 
--   Python 3.6 or higher
+You will need the following installed on your system:
+
+* **Python 3.8+**
+* **Node.js & npm** (version 14 or higher is recommended)
 
 ### Installation
 
-1.  **Clone the repository**:
+1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/HalifaxAl/DupePix.git](https://github.com/HalifaxAl/DupePix.git)
-    cd DupePix
+    git clone [https://github.com/your-username/dupepix.git](https://github.com/your-username/dupepix.git)
+    cd dupepix
     ```
 
-### Usage
-
-The workflow involves two main steps:
-
-1.  **Generate a hash list of your photos**:
-    Run the `create_photo_hash_list.py` script, providing the path to your photo directory. This will create a timestamped `photo_hashes_YYYYMMDD_HHMMSS.json` file in the specified directory.
-
+2.  **Set up the Backend:**
+    Navigate to the `backend` directory, create and activate a Python virtual environment, and install the required packages.
     ```bash
-    python3 create_photo_hash_list.py "/path/to/your/photo/directory"
+    cd backend
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
     ```
 
-2.  **Analyze the hash list to find duplicates**:
-    Run the `photo_duplicates.py` script, providing the path to the JSON file you just created. This will generate a `photo_duplicates_YYYYMMDD_HHMM.json` report in the same directory.
-
+3.  **Set up the Frontend:**
+    In a **new terminal window**, navigate to the `frontend` directory and install the Node.js dependencies.
     ```bash
-    python3 photo_duplicates.py "/path/to/your/photo/directory/photo_hashes_YYYYMMDD_HHMMSS.json"
+    cd ../frontend
+    npm install
     ```
 
-    The generated report will contain a `summary` and a `duplicates` section, which includes the original file path for each duplicate.
+## Usage
+
+1.  **Start the Backend Server:**
+    From the `backend` directory, with the virtual environment activated:
+    ```bash
+    python3 backend.py
+    ```
+
+2.  **Start the Frontend Server:**
+    From the `frontend` directory:
+    ```bash
+    npm start
+    ```
+
+The application will open in your default browser. Enter a directory path and click "Start Scan" to begin the process.
+
+## Project Structure
+
+DupePix/
+├── backend/
+│   ├── backend.py
+│   ├── requirements.txt
+│   └── venv/
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── splash.png
+│   ├── src/
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   ├── index.css
+│   │   ├── index.tsx
+│   │   └── react-app-env.d.ts
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── .gitignore
+├── create_photo_hash_list.py
+├── photo_duplicates.py
+├── .gitignore
+├── LICENSE.md
+└── README.md
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have a feature request, please open an issue.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License.
