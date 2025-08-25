@@ -5,6 +5,7 @@ __pycache__/
 # Generated files
 photo_hashes*.json
 photo_duplicates*.json
+*.log
 
 # Operating System files
 .DS_Store
