@@ -1,0 +1,24 @@
+{
+  "name": "dupepix-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js", // This line is new for Electron
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .", // This script is new
+    "dev": "concurrently \"npm start\" \"npx electron\"" // This is new for easy dev
+  },
+  "devDependencies": {
+    "electron": "^28.2.2",
+    "concurrently": "^8.2.2"
+  }
+}
