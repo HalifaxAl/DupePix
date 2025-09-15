@@ -1,210 +1,1349 @@
-2025-08-24 00:14:24,968 - INFO - 127.0.0.1 - - [24/Aug/2025 00:14:24] "GET /scan/status HTTP/1.1" 200 -
-2025-08-24 00:14:27,315 - INFO - 127.0.0.1 - - [24/Aug/2025 00:14:27] "GET /scan/status HTTP/1.1" 200 -
-2025-08-24 00:14:29,011 - INFO - 127.0.0.1 - - [24/Aug/2025 00:14:29] "GET /scan/status HTTP/1.1" 200 -
-2025-08-24 00:14:31,353 - INFO - 127.0.0.1 - - [24/Aug/2025 00:14:31] "GET /scan/status HTTP/1.1" 200 -
-2025-08-24 00:14:33,053 - INFO - 127.0.0.1 - - [24/Aug/2025 00:14:33] "GET /scan/status HTTP/1.1" 200 -
-2025-08-24 00:14:52,754 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-09-12 11:36:39,285 - INFO - Starting backend server.
+2025-09-12 11:36:39,353 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-08-24 00:14:52,754 - INFO - [33mPress CTRL+C to quit[0m
-2025-08-24 00:14:52,755 - INFO -  * Restarting with stat
-2025-08-24 00:14:52,937 - WARNING -  * Debugger is active!
-2025-08-24 00:14:52,939 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 00:16:56,775 - INFO - 127.0.0.1 - - [24/Aug/2025 00:16:56] "[33mGET / HTTP/1.1[0m" 404 -
-2025-08-24 00:17:48,924 - INFO - 127.0.0.1 - - [24/Aug/2025 00:17:48] "[33mGET / HTTP/1.1[0m" 404 -
-2025-08-24 00:41:47,440 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-09-12 11:36:39,353 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 11:36:39,354 - INFO -  * Restarting with stat
+2025-09-12 11:36:39,540 - INFO - Starting backend server.
+2025-09-12 11:36:39,556 - WARNING -  * Debugger is active!
+2025-09-12 11:36:39,653 - INFO -  * Debugger PIN: 108-302-579
+2025-09-12 11:37:08,369 - INFO - 127.0.0.1 - - [12/Sep/2025 11:37:08] "[33mGET / HTTP/1.1[0m" 404 -
+2025-09-12 11:37:08,422 - INFO - 127.0.0.1 - - [12/Sep/2025 11:37:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-12 11:48:26,401 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:26] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-12 11:48:26,663 - INFO - Received scan request.
+2025-09-12 11:48:26,683 - INFO - Scan aec51f75-3e23-40ba-9b9b-c9399d19fd92 initiated for directory: /mnt/c/Users/Alex/Pictures
+2025-09-12 11:48:26,687 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:26] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-12 11:48:28,802 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:28,802 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:31,230 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:31,231 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:31] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:32,982 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:32,983 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:35,411 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:35,412 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:35] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:35,735 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:35,736 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:35] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:38,165 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:38,166 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:38] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:39,923 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:39,924 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:42,357 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:42,357 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:42] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:44,107 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:44,108 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:44] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:46,531 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:46,531 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:46] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:48,316 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:48,318 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:48] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:50,730 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:50,731 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:52,508 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:52,509 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:52] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:54,920 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:54,921 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:56,699 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:56,700 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:56] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:48:59,131 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:48:59,131 - INFO - 127.0.0.1 - - [12/Sep/2025 11:48:59] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:00,896 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:00,897 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:03,326 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:03,326 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:03] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:05,072 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:05,073 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:05] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:06,037 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:06,038 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:06] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:07,795 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:07,796 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:07] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:10,213 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:10,214 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:10] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:11,973 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:11,973 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:14,383 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:14,384 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:14] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:16,163 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:16,164 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:16] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:18,592 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:18,593 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:18] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:20,356 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:20,357 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:20] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:22,771 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:22,772 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:22] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:24,532 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:24,533 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:24] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:26,963 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:26,964 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:26] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:28,734 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:28,736 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:31,149 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:31,150 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:31] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:32,904 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:32,904 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:35,315 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:35,316 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:35] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:37,095 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:37,095 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:37] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:38,083 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:38,155 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:38] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:39,851 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:39,851 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:42,282 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:42,282 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:42] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:44,027 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:44,028 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:44] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:46,456 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:46,456 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:46] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:48,221 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:48,221 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:48] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:50,642 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:50,642 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:52,399 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:52,400 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:52] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:54,812 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:54,812 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:56,593 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:56,593 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:56] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:49:59,007 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:49:59,008 - INFO - 127.0.0.1 - - [12/Sep/2025 11:49:59] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:00,784 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:00,785 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:03,194 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:03,195 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:03] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:04,962 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:04,962 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:04] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:07,393 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:07,394 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:07] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:07,717 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:07,718 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:07] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:10,149 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:10,150 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:10] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:11,895 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:11,895 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:14,323 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:14,323 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:14] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:16,087 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:16,088 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:16] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:18,517 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:18,518 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:18] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:20,281 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:20,281 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:20] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:22,695 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:22,696 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:22] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:24,457 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:24,458 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:24] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:26,895 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:26,895 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:26] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:28,653 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:28,654 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:31,068 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:31,069 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:31] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:32,830 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:32,831 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:35,242 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:35,242 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:35] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:37,023 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:37,024 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:37] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:38,011 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:38,012 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:38] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:39,775 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:39,776 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:42,194 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:42,195 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:42] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:43,952 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:43,952 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:43] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:46,367 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:46,368 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:46] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:48,145 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:48,146 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:48] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:50,557 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:50,558 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:52,325 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:52,325 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:52] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:54,739 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:54,740 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:56,515 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:56,516 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:56] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:50:58,947 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:50:58,948 - INFO - 127.0.0.1 - - [12/Sep/2025 11:50:58] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:00,706 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:00,707 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:03,124 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:03,124 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:03] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:04,888 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:04,888 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:04] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:07,302 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:07,303 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:07] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:09,080 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:09,081 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:09] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:10,070 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:10,071 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:10] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:11,818 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:11,819 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:14,250 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:14,251 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:14] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:16,012 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:16,013 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:16] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:18,446 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:18,447 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:18] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:20,213 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:20,213 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:20] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:22,634 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:22,636 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:22] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:24,398 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:24,398 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:24] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:26,831 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:26,832 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:26] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:28,601 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:28,603 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:31,030 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:31,030 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:31] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:32,831 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:32,832 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:35,192 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:35,192 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:35] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:36,966 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:36,966 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:36] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:39,393 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:39,393 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:39,702 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:39,703 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:42,116 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:42,116 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:42] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:43,881 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:43,882 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:43] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:46,312 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:46,313 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:46] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:48,084 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:48,086 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:48] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:50,511 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:50,512 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:52,268 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:52,270 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:52] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:54,700 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:54,701 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:56,471 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:56,472 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:56] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:51:58,894 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:51:58,895 - INFO - 127.0.0.1 - - [12/Sep/2025 11:51:58] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:00,687 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:00,687 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:03,112 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:03,113 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:03] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:04,884 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:04,885 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:04] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:07,312 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:07,312 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:07] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:09,076 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:09,076 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:09] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:11,504 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:11,504 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:11,746 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:11,747 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:14,154 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:14,155 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:14] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:15,910 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:15,911 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:15] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:18,312 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:18,313 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:18] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:20,056 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:20,057 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:20] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:22,485 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:22,485 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:22] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:24,278 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:24,278 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:24] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:26,750 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:26,750 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:26] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:28,544 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:28,544 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:30,973 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:30,975 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:30] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:32,731 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:32,732 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:35,164 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:35,165 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:35] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:36,931 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:36,932 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:36] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:39,361 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:39,362 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:41,114 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:41,115 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:41] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:42,038 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:42,039 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:42] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:43,802 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:43,803 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:43] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:46,217 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:46,218 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:46] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:47,986 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:47,986 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:47] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:50,415 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:50,416 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:52,161 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:52,162 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:52] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:54,576 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:54,577 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:56,354 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:56,355 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:56] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:52:58,772 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:52:58,773 - INFO - 127.0.0.1 - - [12/Sep/2025 11:52:58] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:00,547 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:00,548 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:02,961 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:02,962 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:02] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:04,724 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:04,724 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:04] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:07,150 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:07,151 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:07] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:08,917 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:08,918 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:08] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:11,349 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:11,349 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:13,111 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:13,112 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:13] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:14,087 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:14,088 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:14] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:15,866 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:15,867 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:15] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:18,284 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:18,285 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:18] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:20,060 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:20,061 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:20] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:22,473 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:22,474 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:22] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:24,238 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:24,239 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:24] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:26,670 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:26,671 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:26] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:28,433 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:28,433 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:30,861 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:30,861 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:30] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:32,609 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:32,610 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:35,039 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:35,040 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:35] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:36,840 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:36,841 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:36] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:39,217 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:39,218 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:41,000 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:41,000 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:41] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:43,410 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:43,410 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:43] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:43,729 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:43,730 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:43] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:46,161 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:46,161 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:46] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:47,925 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:47,926 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:47] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:50,353 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:50,354 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:52,103 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:52,103 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:52] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:54,531 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:54,532 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:56,296 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:56,297 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:56] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:53:58,728 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:53:58,728 - INFO - 127.0.0.1 - - [12/Sep/2025 11:53:58] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:00,492 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:00,492 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:02,904 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:02,905 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:02] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:04,668 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:04,669 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:04] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:07,098 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:07,099 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:07] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:08,863 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:08,864 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:08] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:11,292 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:11,292 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:13,040 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:13,041 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:13] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:14,022 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:14,023 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:14] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:15,786 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:15,787 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:15] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:18,217 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:18,217 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:18] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:19,981 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:19,981 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:19] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:22,396 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:22,397 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:22] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:24,159 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:24,160 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:24] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:26,589 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:26,589 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:26] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:28,354 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:28,355 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:30,785 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:30,785 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:30] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:32,534 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:32,535 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:34,965 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:34,966 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:34] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:36,730 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:36,730 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:36] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:39,158 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:39,159 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:40,922 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:40,923 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:40] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:43,334 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:43,335 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:43] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:45,098 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:45,098 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:45] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:46,073 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:46,074 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:46] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:47,850 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:47,850 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:47] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:50,285 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:50,286 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:52,028 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:52,028 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:52] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:54,445 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:54,446 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:56,226 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:56,227 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:56] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:54:58,653 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:54:58,654 - INFO - 127.0.0.1 - - [12/Sep/2025 11:54:58] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:00,427 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:00,428 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:02,847 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:02,847 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:02] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:04,618 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:04,618 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:04] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:07,043 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:07,043 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:07] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:08,832 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:08,834 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:08] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:11,241 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:11,241 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:13,010 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:13,011 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:13] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:15,428 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:15,429 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:15] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:15,713 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:15,714 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:15] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:18,123 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:18,123 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:18] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:19,891 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:19,892 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:19] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:22,277 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:22,278 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:22] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:24,042 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:24,042 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:24] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:26,475 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:26,476 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:26] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:28,258 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:28,258 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:30,717 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:30,718 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:30] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:32,488 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:32,489 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:34,923 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:34,925 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:34] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:36,729 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:36,730 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:36] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:39,126 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:39,128 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:40,905 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:40,906 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:40] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:43,315 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:43,316 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:43] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:45,077 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:45,077 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:45] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:46,001 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:46,002 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:46] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:47,772 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:47,773 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:47] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:50,199 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:50,200 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:51,945 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:51,946 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:51] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:54,374 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:54,374 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:56,139 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:56,140 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:56] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:55:58,555 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:55:58,556 - INFO - 127.0.0.1 - - [12/Sep/2025 11:55:58] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:00,318 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:00,319 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:02,731 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:02,732 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:02] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:04,511 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:04,511 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:04] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:06,928 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:06,929 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:06] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:08,705 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:08,706 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:08] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:11,132 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:11,133 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:12,898 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:12,899 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:12] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:15,296 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:15,297 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:15] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:17,075 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:17,075 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:17] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:18,055 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:18,056 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:18] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:19,850 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:19,851 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:19] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:22,249 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:22,250 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:22] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:24,032 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:24,033 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:24] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:26,446 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:26,447 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:26] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:28,207 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:28,208 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:30,638 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:30,639 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:30] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:32,389 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:32,389 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:34,810 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:34,811 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:34] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:36,578 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:36,579 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:36] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:39,009 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:39,010 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:39] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:40,774 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:40,774 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:40] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:43,187 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:43,188 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:43] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:44,952 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:44,952 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:44] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:47,369 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:47,370 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:47] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:47,699 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:47,699 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:47] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:50,113 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:50,114 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:51,878 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:51,879 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:51] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:54,301 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:54,302 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:56,072 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:56,073 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:56] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:56:58,503 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:56:58,503 - INFO - 127.0.0.1 - - [12/Sep/2025 11:56:58] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:00,267 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:00,268 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:02,667 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:02,668 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:02] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:04,445 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:04,445 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:04] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:06,877 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:06,878 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:06] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:08,640 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:08,641 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:08] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:11,072 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:11,072 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:12,834 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:12,835 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:12] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:15,250 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:15,250 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:15] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:17,012 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:17,013 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:17] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:19,443 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:19,444 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:19] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:19,761 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:19,762 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:19] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:22,174 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:22,175 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:22] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:23,940 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:23,941 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:23] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:26,372 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:26,373 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:26] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:28,138 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:28,139 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:28] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:30,575 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:30,575 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:30] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:32,329 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:32,330 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:32] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:34,765 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:34,766 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:34] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:36,525 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:36,526 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:36] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:38,943 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:38,943 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:38] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:40,723 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:40,724 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:40] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:43,138 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:43,139 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:43] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:44,901 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:44,902 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:44] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:47,325 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:47,325 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:47] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:49,095 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:49,096 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:49] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:50,054 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:50,055 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:50] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:51,803 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:51,803 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:51] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:54,233 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:54,234 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:54] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:55,997 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:55,998 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:55] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:57:58,414 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:57:58,415 - INFO - 127.0.0.1 - - [12/Sep/2025 11:57:58] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:58:00,181 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:58:00,182 - INFO - 127.0.0.1 - - [12/Sep/2025 11:58:00] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:58:02,614 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:58:02,614 - INFO - 127.0.0.1 - - [12/Sep/2025 11:58:02] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:58:04,382 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:58:04,383 - INFO - 127.0.0.1 - - [12/Sep/2025 11:58:04] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:58:06,801 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:58:06,802 - INFO - 127.0.0.1 - - [12/Sep/2025 11:58:06] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:58:08,590 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:58:08,591 - INFO - 127.0.0.1 - - [12/Sep/2025 11:58:08] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:58:09,318 - INFO - Scan aec51f75-3e23-40ba-9b9b-c9399d19fd92 and analysis completed successfully.
+2025-09-12 11:58:11,023 - INFO - Status request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:58:11,024 - INFO - 127.0.0.1 - - [12/Sep/2025 11:58:11] "GET /scan/status/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 11:58:11,280 - INFO - Report request received for scan ID: aec51f75-3e23-40ba-9b9b-c9399d19fd92
+2025-09-12 11:58:11,305 - INFO - 127.0.0.1 - - [12/Sep/2025 11:58:11] "GET /scan/report/aec51f75-3e23-40ba-9b9b-c9399d19fd92 HTTP/1.1" 200 -
+2025-09-12 12:00:30,169 - INFO - 127.0.0.1 - - [12/Sep/2025 12:00:30] "[33mGET / HTTP/1.1[0m" 404 -
+2025-09-12 12:02:16,475 - INFO - 127.0.0.1 - - [12/Sep/2025 12:02:16] "[33mGET /api/game-of-life HTTP/1.1[0m" 404 -
+2025-09-12 12:02:16,543 - INFO - 127.0.0.1 - - [12/Sep/2025 12:02:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-12 12:02:33,548 - INFO - 127.0.0.1 - - [12/Sep/2025 12:02:33] "[33mGET / HTTP/1.1[0m" 404 -
+2025-09-12 12:15:13,971 - INFO - Starting backend server.
+2025-09-12 12:15:13,998 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-08-24 00:41:47,440 - INFO - [33mPress CTRL+C to quit[0m
-2025-08-24 00:41:47,442 - INFO -  * Restarting with stat
-2025-08-24 00:41:47,617 - WARNING -  * Debugger is active!
-2025-08-24 00:41:47,716 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 01:01:24,454 - INFO -  * Detected change in '/home/alex/Projects/dupepix/photo_duplicates.py', reloading
-2025-08-24 01:01:24,548 - INFO -  * Restarting with stat
-2025-08-24 01:01:26,066 - WARNING -  * Debugger is active!
-2025-08-24 01:01:26,144 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 01:01:32,212 - INFO -  * Detected change in '/home/alex/Projects/dupepix/create_photo_hash_list.py', reloading
-2025-08-24 01:01:32,279 - INFO -  * Restarting with stat
-2025-08-24 01:01:32,492 - WARNING -  * Debugger is active!
-2025-08-24 01:01:32,495 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 01:12:43,409 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
-2025-08-24 01:12:43,452 - INFO -  * Restarting with stat
-2025-08-24 01:12:43,628 - WARNING -  * Debugger is active!
-2025-08-24 01:12:43,631 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 01:12:54,229 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-09-12 12:15:13,998 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 12:15:14,000 - INFO -  * Restarting with stat
+2025-09-12 12:15:14,167 - INFO - Starting backend server.
+2025-09-12 12:15:14,181 - WARNING -  * Debugger is active!
+2025-09-12 12:15:14,189 - INFO -  * Debugger PIN: 108-302-579
+2025-09-12 12:16:20,273 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:20] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-12 12:16:20,538 - INFO - Received scan request.
+2025-09-12 12:16:20,541 - INFO - Scan 5cd37ee0-342c-45ec-b00e-e03703b651f4 initiated for directory: /mnt/c/Users/Alex/Pictures
+2025-09-12 12:16:20,543 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:20] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-12 12:16:22,651 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:22,651 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:22] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:25,087 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:25,087 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:25] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:26,852 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:26,853 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:26] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:29,295 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:29,296 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:29] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:31,035 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:31,036 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:31] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:33,468 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:33,468 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:33] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:35,236 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:35,236 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:35] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:37,652 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:37,653 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:37] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:39,436 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:39,437 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:39] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:41,854 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:41,854 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:41] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:43,619 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:43,620 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:43] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:46,053 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:46,054 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:46] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:47,820 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:47,821 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:47] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:48,751 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:48,752 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:48] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:50,516 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:50,517 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:50] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:52,948 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:52,949 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:52] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:54,717 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:54,717 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:54] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:57,149 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:57,149 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:57] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:16:58,902 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:16:58,903 - INFO - 127.0.0.1 - - [12/Sep/2025 12:16:58] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:01,336 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:01,338 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:01] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:03,100 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:03,100 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:03] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:05,534 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:05,535 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:05] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:07,299 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:07,300 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:07] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:09,709 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:09,710 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:09] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:11,483 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:11,483 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:11] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:13,904 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:13,905 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:13] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:15,680 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:15,680 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:15] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:18,117 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:18,118 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:18] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:18,396 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:18,397 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:18] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:20,815 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:20,815 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:20] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:22,592 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:22,594 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:22] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:25,010 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:25,011 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:25] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:26,779 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:26,779 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:26] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:29,210 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:29,210 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:29] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:31,244 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:31,244 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:31] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:33,374 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:33,375 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:33] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:35,154 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:35,155 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:35] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:37,589 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:37,591 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:37] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:39,348 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:39,349 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:39] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:40,751 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:40] "[33mGET /?id=bbe078aa-9cf1-41ad-ab9b-4a49180d75ac&vscodeBrowserReqId=1757690260556 HTTP/1.1[0m" 404 -
+2025-09-12 12:17:41,777 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:41,778 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:41] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:43,551 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:43,552 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:43] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:45,965 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:45,966 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:45] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:47,731 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:47,731 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:47] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:48,032 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:48] "[33mGET / HTTP/1.1[0m" 404 -
+2025-09-12 12:17:49,236 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:49,237 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:49] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:50,999 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:51,001 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:51] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:53,431 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:53,432 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:53] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:55,203 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:55,204 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:55] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:57,616 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:57,617 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:57] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:17:59,385 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:17:59,385 - INFO - 127.0.0.1 - - [12/Sep/2025 12:17:59] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:01,818 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:01,818 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:01] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:03,588 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:03,589 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:03] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:06,006 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:06,006 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:06] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:07,783 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:07,784 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:07] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:10,209 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:10,210 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:10] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:11,973 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:11,974 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:11] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:14,413 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:14,414 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:14] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:16,170 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:16,170 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:16] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:18,593 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:18,593 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:18] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:20,374 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:20,375 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:20] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:21,300 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:21,300 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:21] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:23,054 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:23,055 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:23] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:25,489 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:25,490 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:25] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:27,279 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:27,279 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:27] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:29,707 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:29,707 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:29] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:31,469 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:31,470 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:31] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:33,912 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:33,913 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:33] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:35,694 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:35,695 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:35] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:38,141 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:38,142 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:38] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:39,905 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:39,906 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:39] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:42,335 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:42,336 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:42] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:44,112 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:44,113 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:44] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:18:46,524 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:18:46,524 - INFO - 127.0.0.1 - - [12/Sep/2025 12:18:46] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:19:08,775 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:19:08,776 - INFO - 127.0.0.1 - - [12/Sep/2025 12:19:08] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:20:09,033 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:20:09,034 - INFO - 127.0.0.1 - - [12/Sep/2025 12:20:09] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:21:08,662 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:21:08,662 - INFO - 127.0.0.1 - - [12/Sep/2025 12:21:08] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:22:08,910 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:22:08,910 - INFO - 127.0.0.1 - - [12/Sep/2025 12:22:08] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:23:08,489 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:23:08,490 - INFO - 127.0.0.1 - - [12/Sep/2025 12:23:08] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:24:08,753 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:24:08,754 - INFO - 127.0.0.1 - - [12/Sep/2025 12:24:08] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:24:44,167 - INFO - Scan 5cd37ee0-342c-45ec-b00e-e03703b651f4 and analysis completed successfully.
+2025-09-12 12:25:08,369 - INFO - Status request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:25:08,370 - INFO - 127.0.0.1 - - [12/Sep/2025 12:25:08] "GET /scan/status/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 12:25:08,721 - INFO - Report request received for scan ID: 5cd37ee0-342c-45ec-b00e-e03703b651f4
+2025-09-12 12:25:08,722 - INFO - 127.0.0.1 - - [12/Sep/2025 12:25:08] "GET /scan/report/5cd37ee0-342c-45ec-b00e-e03703b651f4 HTTP/1.1" 200 -
+2025-09-12 15:51:45,376 - INFO - 127.0.0.1 - - [12/Sep/2025 15:51:45] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-12 15:51:45,599 - INFO - Received scan request.
+2025-09-12 15:51:45,608 - INFO - Scan cd25d0c9-4afa-4c22-b329-9d872d4ac790 initiated for directory: /mnt/c/Users/Alex/Pictures
+2025-09-12 15:51:45,613 - INFO - 127.0.0.1 - - [12/Sep/2025 15:51:45] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-12 15:51:47,727 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:51:47,728 - INFO - 127.0.0.1 - - [12/Sep/2025 15:51:47] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:51:50,164 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:51:50,165 - INFO - 127.0.0.1 - - [12/Sep/2025 15:51:50] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:51:51,926 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:51:51,928 - INFO - 127.0.0.1 - - [12/Sep/2025 15:51:51] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:51:54,340 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:51:54,344 - INFO - 127.0.0.1 - - [12/Sep/2025 15:51:54] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:51:56,100 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:51:56,101 - INFO - 127.0.0.1 - - [12/Sep/2025 15:51:56] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:51:58,511 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:51:58,512 - INFO - 127.0.0.1 - - [12/Sep/2025 15:51:58] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:00,271 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:00,272 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:00] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:02,685 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:02,686 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:02] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:04,445 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:04,446 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:04] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:05,470 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:05,470 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:05] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:07,235 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:07,235 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:07] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:09,650 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:09,651 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:09] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:11,426 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:11,428 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:11] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:13,878 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:13,879 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:13] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:15,641 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:15,643 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:15] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:18,089 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:18,090 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:18] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:19,869 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:19,870 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:19] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:22,309 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:22,310 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:22] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:24,087 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:24,087 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:24] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:26,474 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:26,475 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:26] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:28,250 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:28,250 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:28] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:30,614 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:30,616 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:30] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:32,333 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:32,334 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:32] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:34,709 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:34,710 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:34] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:36,473 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:36,474 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:36] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:37,523 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:37,523 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:37] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:39,273 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:39,274 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:39] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:41,670 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:41,671 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:41] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:43,438 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:43,439 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:43] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:45,847 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:45,848 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:45] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:47,625 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:47,625 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:47] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:50,074 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:50,076 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:50] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:51,854 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:51,854 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:51] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:54,292 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:54,293 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:54] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:56,038 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:56,039 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:56] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:52:58,451 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:52:58,452 - INFO - 127.0.0.1 - - [12/Sep/2025 15:52:58] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:00,232 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:00,232 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:00] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:02,621 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:02,622 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:02] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:04,354 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:04,355 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:04] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:06,721 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:06,721 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:06] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:07,147 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:07,148 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:07] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:09,557 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:09,558 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:09] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:11,339 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:11,340 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:11] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:13,767 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:13,767 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:13] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:15,511 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:15,512 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:15] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:17,925 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:17,926 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:17] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:19,702 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:19,703 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:19] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:22,133 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:22,134 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:22] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:23,882 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:23,883 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:23] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:26,294 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:26,295 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:26] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:28,068 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:28,069 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:28] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:30,478 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:30,478 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:30] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:32,260 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:32,261 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:32] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:34,687 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:34,687 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:34] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:36,432 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:36,432 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:36] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:37,438 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:37,439 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:37] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:39,200 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:39,201 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:39] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:41,611 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:41,611 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:41] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:43,375 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:43,376 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:43] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:45,814 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:45,814 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:45] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:47,560 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:47,561 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:47] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:49,987 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:49,987 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:49] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:51,751 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:51,752 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:51] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:54,179 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:54,179 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:54] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:55,922 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:55,923 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:55] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:53:58,350 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:53:58,351 - INFO - 127.0.0.1 - - [12/Sep/2025 15:53:58] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:00,109 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:00,109 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:00] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:02,535 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:02,536 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:02] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:04,284 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:04,284 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:04] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:06,703 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:06,704 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:06] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:08,464 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:08,465 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:08] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:09,472 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:09,472 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:09] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:11,247 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:11,247 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:11] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:13,663 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:13,664 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:13] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:15,420 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:15,420 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:15] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:17,846 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:17,846 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:17] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:19,606 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:19,607 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:19] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:22,016 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:22,016 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:22] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:23,796 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:23,797 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:23] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:26,206 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:26,206 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:26] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:27,967 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:27,967 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:27] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:30,376 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:30,377 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:30] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:32,157 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:32,158 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:32] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:34,563 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:34,563 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:34] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:36,326 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:36,326 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:36] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:38,735 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:38,735 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:38] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:39,117 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:39,118 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:39] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:41,547 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:41,547 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:41] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:43,308 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:43,309 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:43] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:45,716 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:45,717 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:45] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:47,479 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:47,479 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:47] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:49,887 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:49,887 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:49] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:51,667 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:51,668 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:51] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:54,076 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:54,077 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:54] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:55,854 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:55,855 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:55] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:54:58,257 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:54:58,257 - INFO - 127.0.0.1 - - [12/Sep/2025 15:54:58] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:00,027 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:00,027 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:00] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:02,439 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:02,440 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:02] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:04,213 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:04,213 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:04] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:06,620 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:06,621 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:06] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:08,376 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:08,377 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:08] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:10,801 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:10,802 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:10] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:11,177 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:11,177 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:11] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:13,584 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:13,584 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:13] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:15,343 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:15,344 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:15] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:17,768 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:17,768 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:17] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:19,532 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:19,532 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:19] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:21,958 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:21,958 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:21] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:23,723 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:23,724 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:23] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:26,128 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:26,129 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:26] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:27,892 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:27,893 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:27] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:30,302 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:30,303 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:30] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:32,081 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:32,082 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:32] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:34,510 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:34,510 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:34] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:36,250 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:36,251 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:36] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:38,671 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:38,672 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:38] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:40,435 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:40,436 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:40] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:41,446 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:41,447 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:41] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:43,211 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:43,211 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:43] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:45,589 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:45,590 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:45] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:47,351 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:47,352 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:47] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:49,754 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:49,754 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:49] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:51,529 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:51,530 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:51] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:53,960 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:53,960 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:53] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:55,705 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:55,706 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:55] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:58,116 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:58,117 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:58] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:55:59,897 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:55:59,897 - INFO - 127.0.0.1 - - [12/Sep/2025 15:55:59] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:02,309 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:02,309 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:02] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:04,090 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:04,091 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:04] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:06,499 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:06,499 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:06] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:08,259 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:08,260 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:08] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:10,681 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:10,682 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:10] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:12,442 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:12,442 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:12] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:13,520 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:13,521 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:13] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:15,233 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:15,234 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:15] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:17,613 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:17,614 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:17] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:19,349 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:19,350 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:19] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:21,738 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:21,739 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:21] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:23,525 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:23,525 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:23] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:25,968 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:25,969 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:25] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:27,756 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:27,757 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:27] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:30,191 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:30,192 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:30] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:31,969 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:31,970 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:31] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:34,397 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:34,397 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:34] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:36,143 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:36,144 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:36] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:38,557 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:38,557 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:38] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:40,295 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:40,296 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:40] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:42,674 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:42,675 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:42] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:43,137 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:43,137 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:43] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:45,519 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:45,520 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:45] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:47,281 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:47,282 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:47] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:49,708 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:49,709 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:49] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:51,461 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:51,463 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:51] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:53,893 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:53,894 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:53] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:55,636 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:55,637 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:55] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:58,063 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:58,064 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:58] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:56:59,824 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:56:59,825 - INFO - 127.0.0.1 - - [12/Sep/2025 15:56:59] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:02,253 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:02,253 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:02] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:04,010 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:04,011 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:04] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:06,408 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:06,409 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:06] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:08,179 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:08,180 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:08] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:10,607 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:10,608 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:10] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:12,362 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:12,363 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:12] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:13,436 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:13,437 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:13] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:15,182 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:15,183 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:15] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:17,606 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:17,606 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:17] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:19,369 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:19,369 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:19] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:21,793 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:21,794 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:21] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:23,553 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:23,554 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:23] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:25,953 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:25,954 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:25] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:27,723 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:27,723 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:27] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:30,132 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:30,132 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:30] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:31,908 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:31,908 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:31] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:34,316 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:34,316 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:34] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:36,077 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:36,077 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:36] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:38,503 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:38,504 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:38] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:40,285 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:40,286 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:40] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:42,676 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:42,677 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:42] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:44,446 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:44,447 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:44] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:45,467 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:45,468 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:45] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:47,233 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:47,234 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:47] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:49,658 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:49,658 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:49] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:51,420 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:51,421 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:51] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:53,831 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:53,831 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:53] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:55,590 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:55,590 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:55] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:58,011 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:58,012 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:58] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:57:59,774 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:57:59,774 - INFO - 127.0.0.1 - - [12/Sep/2025 15:57:59] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:02,202 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:02,202 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:02] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:03,960 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:03,960 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:03] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:06,368 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:06,368 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:06] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:08,131 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:08,132 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:08] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:10,535 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:10,536 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:10] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:12,310 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:12,310 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:12] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:14,720 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:14,721 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:14] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:15,101 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:15,102 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:15] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:17,521 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:17,522 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:17] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:19,276 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:19,277 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:19] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:21,686 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:21,686 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:21] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:23,464 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:23,465 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:23] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:25,857 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:25,857 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:25] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:27,631 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:27,631 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:27] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:30,040 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:30,040 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:30] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:31,817 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:31,818 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:31] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:34,222 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:34,223 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:34] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:35,974 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:35,975 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:35] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:38,381 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:38,381 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:38] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:40,157 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:40,157 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:40] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:42,578 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:42,578 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:42] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:44,328 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:44,329 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:44] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:46,747 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:46,747 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:46] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:47,153 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:47,154 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:47] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:49,595 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:49,595 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:49] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:51,338 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:51,339 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:51] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:53,761 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:53,762 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:53] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:55,510 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:55,510 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:55] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:57,925 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:57,926 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:57] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:58:59,686 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:58:59,687 - INFO - 127.0.0.1 - - [12/Sep/2025 15:58:59] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:02,110 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:02,110 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:02] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:03,871 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:03,871 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:03] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:06,301 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:06,301 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:06] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:08,035 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:08,035 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:08] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:10,458 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:10,459 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:10] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:12,219 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:12,220 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:12] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:14,623 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:14,624 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:14] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:16,380 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:16,381 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:16] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:17,446 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:17,447 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:17] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:19,199 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:19,200 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:19] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:21,616 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:21,616 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:21] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:23,373 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:23,374 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:23] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:25,771 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:25,771 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:25] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:27,532 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:27,532 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:27] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:29,941 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:29,942 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:29] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:31,718 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:31,719 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:31] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:34,139 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:34,140 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:34] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:35,887 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:35,887 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:35] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:38,301 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:38,301 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:38] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:40,075 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:40,075 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:40] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:42,498 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:42,499 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:42] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:44,259 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:44,259 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:44] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:46,651 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:46,652 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:46] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:48,422 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:48,423 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:48] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:49,495 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:49,496 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:49] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:51,244 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:51,244 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:51] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:53,645 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:53,646 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:53] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:55,371 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:55,372 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:55] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:57,760 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:57,761 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:57] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 15:59:59,539 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 15:59:59,540 - INFO - 127.0.0.1 - - [12/Sep/2025 15:59:59] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:01,976 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:01,977 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:01] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:03,735 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:03,735 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:03] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:06,163 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:06,164 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:06] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:07,928 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:07,928 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:07] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:10,356 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:10,356 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:10] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:12,116 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:12,117 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:12] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:14,535 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:14,536 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:14] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:16,274 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:16,274 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:16] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:18,689 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:18,690 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:18] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:19,120 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:19,121 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:19] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:21,529 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:21,530 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:21] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:23,287 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:23,288 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:23] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:25,710 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:25,711 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:25] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:27,452 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:27,453 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:27] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:29,875 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:29,876 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:29] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:31,637 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:31,637 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:31] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:34,045 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:34,045 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:34] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:35,803 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:35,804 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:35] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:38,213 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:38,214 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:38] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:39,990 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:39,991 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:39] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:41,928 - INFO - Scan cd25d0c9-4afa-4c22-b329-9d872d4ac790 and analysis completed successfully.
+2025-09-12 16:00:42,416 - INFO - Status request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:42,418 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:42] "GET /scan/status/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:00:42,690 - INFO - Report request received for scan ID: cd25d0c9-4afa-4c22-b329-9d872d4ac790
+2025-09-12 16:00:42,695 - INFO - 127.0.0.1 - - [12/Sep/2025 16:00:42] "GET /scan/report/cd25d0c9-4afa-4c22-b329-9d872d4ac790 HTTP/1.1" 200 -
+2025-09-12 16:31:41,205 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
+2025-09-12 16:31:41,522 - INFO -  * Restarting with stat
+2025-09-12 16:31:42,967 - INFO - Starting backend server.
+2025-09-12 16:31:43,139 - WARNING -  * Debugger is active!
+2025-09-12 16:31:43,233 - INFO -  * Debugger PIN: 108-302-579
+2025-09-12 16:41:03,562 - INFO - Starting backend server.
+2025-09-12 16:41:03,591 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-08-24 01:12:54,229 - INFO - [33mPress CTRL+C to quit[0m
-2025-08-24 01:12:54,230 - INFO -  * Restarting with stat
-2025-08-24 01:12:54,402 - WARNING -  * Debugger is active!
-2025-08-24 01:12:54,404 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 01:17:23,263 - INFO - 127.0.0.1 - - [24/Aug/2025 01:17:23] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 01:17:23,473 - WARNING - Scan request received for an invalid directory: /home/Projects/dupepix/frontend/public
-2025-08-24 01:17:23,474 - INFO - 127.0.0.1 - - [24/Aug/2025 01:17:23] "[31m[1mPOST /scan HTTP/1.1[0m" 400 -
-2025-08-24 01:19:00,963 - INFO - 127.0.0.1 - - [24/Aug/2025 01:19:00] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 01:19:01,213 - WARNING - Scan request received for an invalid directory: /home/alex/Projects/frontend/public
-2025-08-24 01:19:01,215 - INFO - 127.0.0.1 - - [24/Aug/2025 01:19:01] "[31m[1mPOST /scan HTTP/1.1[0m" 400 -
-2025-08-24 14:42:21,892 - INFO - 127.0.0.1 - - [24/Aug/2025 14:42:21] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 14:42:22,158 - INFO - Scan 6385ccc9-b4e7-4b04-89aa-3c56798042cf initiated for directory: /home/alex/Projects/dupepix/frontend/public
-2025-08-24 14:42:22,164 - INFO - 127.0.0.1 - - [24/Aug/2025 14:42:22] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 14:42:24,403 - INFO - 127.0.0.1 - - [24/Aug/2025 14:42:24] "[33mGET /scan/status HTTP/1.1[0m" 404 -
-2025-08-24 14:51:54,647 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
-2025-08-24 14:51:54,867 - INFO -  * Restarting with stat
-2025-08-24 14:51:56,607 - INFO - Starting backend server.
-2025-08-24 14:51:56,868 - WARNING -  * Debugger is active!
-2025-08-24 14:51:57,034 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 14:53:24,968 - INFO - 127.0.0.1 - - [24/Aug/2025 14:53:24] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 14:53:25,241 - INFO - Received scan request.
-2025-08-24 14:53:25,241 - INFO - Scan 4ee49b2b-d343-4c73-85a8-1a113f75b431 initiated for directory: /home/alex/Projects/dupepix/frontend/public
-2025-08-24 14:53:25,243 - INFO - 127.0.0.1 - - [24/Aug/2025 14:53:25] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 14:53:27,330 - INFO - 127.0.0.1 - - [24/Aug/2025 14:53:27] "[33mGET /scan/status HTTP/1.1[0m" 404 -
-2025-08-24 15:20:24,063 - INFO - Starting backend server.
-2025-08-24 16:02:37,233 - INFO - Starting backend server.
-2025-08-24 16:06:39,537 - INFO - Starting backend server.
-2025-08-24 16:06:39,803 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-09-12 16:41:03,591 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 16:41:03,592 - INFO -  * Restarting with stat
+2025-09-12 16:41:03,756 - INFO - Starting backend server.
+2025-09-12 16:41:03,771 - WARNING -  * Debugger is active!
+2025-09-12 16:41:03,774 - INFO -  * Debugger PIN: 108-302-579
+2025-09-14 10:59:46,102 - INFO - Starting backend server.
+2025-09-14 10:59:46,421 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-08-24 16:06:39,803 - INFO - [33mPress CTRL+C to quit[0m
-2025-08-24 16:06:39,806 - INFO -  * Restarting with stat
-2025-08-24 16:06:40,002 - INFO - Starting backend server.
-2025-08-24 16:06:40,016 - WARNING -  * Debugger is active!
-2025-08-24 16:06:40,108 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 16:10:37,979 - INFO - 127.0.0.1 - - [24/Aug/2025 16:10:37] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 16:10:38,250 - INFO - Received scan request.
-2025-08-24 16:10:38,267 - INFO - Scan 4baf222e-597a-41f1-83f1-485741cdffd4 initiated for directory: /home/alex/Projects/dupepix/frontend/public
-2025-08-24 16:10:38,269 - INFO - 127.0.0.1 - - [24/Aug/2025 16:10:38] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 16:10:40,433 - INFO - 127.0.0.1 - - [24/Aug/2025 16:10:40] "[33mGET /scan/status HTTP/1.1[0m" 404 -
-2025-08-24 16:11:04,331 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
-2025-08-24 16:11:04,405 - INFO -  * Restarting with stat
-2025-08-24 16:11:05,719 - INFO - Starting backend server.
-2025-08-24 16:11:05,825 - WARNING -  * Debugger is active!
-2025-08-24 16:11:05,911 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 16:12:06,184 - INFO - Starting backend server.
-2025-08-24 16:12:06,218 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-24 16:12:06,218 - INFO - [33mPress CTRL+C to quit[0m
-2025-08-24 16:12:06,219 - INFO -  * Restarting with stat
-2025-08-24 16:12:06,401 - INFO - Starting backend server.
-2025-08-24 16:12:06,416 - WARNING -  * Debugger is active!
-2025-08-24 16:12:06,431 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 16:14:05,487 - INFO - 127.0.0.1 - - [24/Aug/2025 16:14:05] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 16:14:05,777 - INFO - Received scan request.
-2025-08-24 16:14:05,778 - INFO - Scan 0f976502-3506-4a48-9ffe-95de25f813bc initiated for directory: /home/alex/Projects/dupepix/frontend/public
-2025-08-24 16:14:05,780 - INFO - 127.0.0.1 - - [24/Aug/2025 16:14:05] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 16:14:06,095 - INFO - Scan 0f976502-3506-4a48-9ffe-95de25f813bc and analysis completed successfully.
-2025-08-24 16:14:05,683 - INFO - 127.0.0.1 - - [24/Aug/2025 16:14:05] "[33mGET /scan/status HTTP/1.1[0m" 404 -
-2025-08-24 16:16:24,101 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
-2025-08-24 16:16:24,179 - INFO -  * Restarting with stat
-2025-08-24 16:16:25,543 - INFO - Starting backend server.
-2025-08-24 16:16:25,639 - WARNING -  * Debugger is active!
-2025-08-24 16:16:25,735 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 16:16:44,273 - INFO - Starting backend server.
-2025-08-24 16:16:44,296 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-24 16:16:44,296 - INFO - [33mPress CTRL+C to quit[0m
-2025-08-24 16:16:44,297 - INFO -  * Restarting with stat
-2025-08-24 16:16:44,466 - INFO - Starting backend server.
-2025-08-24 16:16:44,478 - WARNING -  * Debugger is active!
-2025-08-24 16:16:44,481 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 16:20:26,003 - INFO - 127.0.0.1 - - [24/Aug/2025 16:20:26] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 16:20:26,274 - INFO - Received scan request.
-2025-08-24 16:20:26,275 - INFO - Scan 1a1ec684-9f35-4335-908d-fe8f9fa1e1bf initiated for directory: /home/alex/Projects/dupepix/frontend/public
-2025-08-24 16:20:26,277 - INFO - 127.0.0.1 - - [24/Aug/2025 16:20:26] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 16:20:26,532 - INFO - Scan 1a1ec684-9f35-4335-908d-fe8f9fa1e1bf and analysis completed successfully.
-2025-08-24 16:20:28,446 - INFO - 127.0.0.1 - - [24/Aug/2025 16:20:28] "[33mGET /scan/status HTTP/1.1[0m" 404 -
-2025-08-24 16:47:10,476 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
-2025-08-24 16:47:10,578 - INFO -  * Restarting with stat
-2025-08-24 16:47:12,320 - INFO - Starting backend server.
-2025-08-24 16:47:12,511 - WARNING -  * Debugger is active!
-2025-08-24 16:47:12,616 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 16:59:36,086 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
-2025-08-24 16:59:36,223 - INFO -  * Restarting with stat
-2025-08-24 16:59:38,251 - INFO - Starting backend server.
-2025-08-24 16:59:38,395 - WARNING -  * Debugger is active!
-2025-08-24 16:59:38,491 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 17:00:50,370 - INFO - 127.0.0.1 - - [24/Aug/2025 17:00:50] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 17:00:50,642 - INFO - Received scan request.
-2025-08-24 17:00:50,643 - WARNING - Scan request received for an invalid directory: /home/alex/Projects/frontend/public
-2025-08-24 17:00:50,643 - INFO - 127.0.0.1 - - [24/Aug/2025 17:00:50] "[31m[1mPOST /scan HTTP/1.1[0m" 400 -
-2025-08-24 17:15:17,712 - INFO - 127.0.0.1 - - [24/Aug/2025 17:15:17] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 17:15:17,994 - INFO - Received scan request.
-2025-08-24 17:15:17,996 - INFO - Scan 7eb79b6f-d900-4b7a-9e65-cb5ca9f96c64 initiated for directory: /home/alex/Projects/dupepix/frontend/public/
-2025-08-24 17:15:18,001 - INFO - 127.0.0.1 - - [24/Aug/2025 17:15:18] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 17:15:18,215 - INFO - Scan 7eb79b6f-d900-4b7a-9e65-cb5ca9f96c64 and analysis completed successfully.
-2025-08-24 17:15:20,186 - INFO - 127.0.0.1 - - [24/Aug/2025 17:15:20] "[33mGET /scan/status HTTP/1.1[0m" 404 -
-2025-08-24 17:20:22,488 - INFO - Starting backend server.
-2025-08-24 17:20:22,730 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-24 17:20:22,730 - INFO - [33mPress CTRL+C to quit[0m
-2025-08-24 17:20:22,732 - INFO -  * Restarting with stat
-2025-08-24 17:20:22,912 - INFO - Starting backend server.
-2025-08-24 17:20:22,928 - WARNING -  * Debugger is active!
-2025-08-24 17:20:23,013 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 17:23:28,982 - INFO - 127.0.0.1 - - [24/Aug/2025 17:23:28] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 17:23:29,247 - INFO - Received scan request.
-2025-08-24 17:23:29,248 - INFO - Scan a50c06f4-d13f-4d8c-a776-3f8b12d4c51f initiated for directory: /home/alex/Projects/dupepix/frontend/public
-2025-08-24 17:23:29,250 - INFO - 127.0.0.1 - - [24/Aug/2025 17:23:29] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 17:23:29,476 - INFO - Scan a50c06f4-d13f-4d8c-a776-3f8b12d4c51f and analysis completed successfully.
-2025-08-24 17:23:31,461 - INFO - 127.0.0.1 - - [24/Aug/2025 17:23:31] "[33mGET /scan/status HTTP/1.1[0m" 404 -
-2025-08-24 17:28:04,233 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
-2025-08-24 17:28:04,359 - INFO -  * Restarting with stat
-2025-08-24 17:28:05,938 - INFO - Starting backend server.
-2025-08-24 17:28:06,093 - WARNING -  * Debugger is active!
-2025-08-24 17:28:06,190 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 17:28:55,240 - INFO - 127.0.0.1 - - [24/Aug/2025 17:28:55] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 17:28:55,512 - INFO - Received scan request.
-2025-08-24 17:28:55,514 - INFO - Scan 041c7278-ad5e-4f47-bd87-ae130b7ba438 initiated for directory: /home/alex/Projects/dupepix/frontend/public
-2025-08-24 17:28:55,518 - INFO - 127.0.0.1 - - [24/Aug/2025 17:28:55] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 17:28:55,588 - INFO - Scan 041c7278-ad5e-4f47-bd87-ae130b7ba438 and analysis completed successfully.
-2025-08-24 17:28:57,720 - INFO - 127.0.0.1 - - [24/Aug/2025 17:28:57] "[33mGET /scan/status HTTP/1.1[0m" 404 -
-2025-08-24 17:49:33,251 - INFO - 127.0.0.1 - - [24/Aug/2025 17:49:33] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 17:49:33,528 - INFO - Received scan request.
-2025-08-24 17:49:33,530 - INFO - Scan 1c5dded3-f392-4ce6-b5ad-d6b5a96e4393 initiated for directory: /home/alex/Projects/dupepix/frontend/public/
-2025-08-24 17:49:33,533 - INFO - 127.0.0.1 - - [24/Aug/2025 17:49:33] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 17:49:33,598 - INFO - Scan 1c5dded3-f392-4ce6-b5ad-d6b5a96e4393 and analysis completed successfully.
-2025-08-24 17:49:35,706 - INFO - 127.0.0.1 - - [24/Aug/2025 17:49:35] "[31m[1mGET /scan/status/1c5dded3-f392-4ce6-b5ad-d6b5a96e4393 HTTP/1.1[0m" 415 -
-2025-08-24 17:56:08,728 - INFO - 127.0.0.1 - - [24/Aug/2025 17:56:08] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 17:56:09,020 - INFO - Received scan request.
-2025-08-24 17:56:09,021 - INFO - Scan e7d2ca86-1fba-445a-a209-4f3336384cd2 initiated for directory: /home/alex/Projects/dupepix/frontend/public/
-2025-08-24 17:56:09,025 - INFO - 127.0.0.1 - - [24/Aug/2025 17:56:09] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 17:56:09,128 - INFO - Scan e7d2ca86-1fba-445a-a209-4f3336384cd2 and analysis completed successfully.
-2025-08-24 17:56:11,249 - INFO - 127.0.0.1 - - [24/Aug/2025 17:56:11] "[31m[1mGET /scan/status/e7d2ca86-1fba-445a-a209-4f3336384cd2 HTTP/1.1[0m" 415 -
-2025-08-24 18:39:03,525 - INFO - 127.0.0.1 - - [24/Aug/2025 18:39:03] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 18:39:03,756 - INFO - Received scan request.
-2025-08-24 18:39:03,759 - INFO - Scan 4d02ee61-7bd1-4789-aa11-b39358eb4be1 initiated for directory: /home/alex/Projects/dupepix/frontend/public
-2025-08-24 18:39:03,762 - INFO - 127.0.0.1 - - [24/Aug/2025 18:39:03] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 18:39:03,932 - INFO - Scan 4d02ee61-7bd1-4789-aa11-b39358eb4be1 and analysis completed successfully.
-2025-08-24 18:39:05,940 - INFO - 127.0.0.1 - - [24/Aug/2025 18:39:05] "[31m[1mGET /scan/status/4d02ee61-7bd1-4789-aa11-b39358eb4be1 HTTP/1.1[0m" 415 -
-2025-08-24 18:39:48,748 - INFO - 127.0.0.1 - - [24/Aug/2025 18:39:48] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 18:39:49,018 - INFO - Received scan request.
-2025-08-24 18:39:49,019 - INFO - Scan 736235df-a69f-4993-a533-22710c165f4d initiated for directory: /home/alex/Projects/dupepix/frontend/public/
-2025-08-24 18:39:49,019 - INFO - 127.0.0.1 - - [24/Aug/2025 18:39:49] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 18:39:49,051 - INFO - Scan 736235df-a69f-4993-a533-22710c165f4d and analysis completed successfully.
-2025-08-24 18:39:51,236 - INFO - 127.0.0.1 - - [24/Aug/2025 18:39:51] "[31m[1mGET /scan/status/736235df-a69f-4993-a533-22710c165f4d HTTP/1.1[0m" 415 -
-2025-08-24 21:08:58,856 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
-2025-08-24 21:08:59,194 - INFO -  * Restarting with stat
-2025-08-24 21:09:02,240 - INFO - Starting backend server.
-2025-08-24 21:09:02,390 - WARNING -  * Debugger is active!
-2025-08-24 21:09:02,486 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 21:10:41,289 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
-2025-08-24 21:10:41,357 - INFO -  * Restarting with stat
-2025-08-24 21:10:41,570 - INFO - Starting backend server.
-2025-08-24 21:10:41,588 - WARNING -  * Debugger is active!
-2025-08-24 21:10:41,590 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 21:17:57,399 - INFO - Starting backend server.
-2025-08-24 21:17:57,441 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-08-24 21:17:57,441 - INFO - [33mPress CTRL+C to quit[0m
-2025-08-24 21:17:57,442 - INFO -  * Restarting with stat
-2025-08-24 21:17:57,605 - INFO - Starting backend server.
-2025-08-24 21:17:57,619 - WARNING -  * Debugger is active!
-2025-08-24 21:17:57,622 - INFO -  * Debugger PIN: 520-912-474
-2025-08-24 21:41:28,122 - INFO - 127.0.0.1 - - [24/Aug/2025 21:41:28] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 21:41:28,416 - INFO - Received scan request.
-2025-08-24 21:41:28,419 - WARNING - Scan request received for an invalid directory: /home/alex/Projects/frontend/public/
-2025-08-24 21:41:28,425 - INFO - 127.0.0.1 - - [24/Aug/2025 21:41:28] "[31m[1mPOST /scan HTTP/1.1[0m" 400 -
-2025-08-24 21:42:45,152 - INFO - 127.0.0.1 - - [24/Aug/2025 21:42:45] "OPTIONS /scan HTTP/1.1" 200 -
-2025-08-24 21:42:45,444 - INFO - Received scan request.
-2025-08-24 21:42:45,446 - INFO - Scan 34d5c113-2d55-4864-a93d-9ecec0ee020d initiated for directory: /home/alex/Projects/dupepix/frontend/public/
-2025-08-24 21:42:45,451 - INFO - 127.0.0.1 - - [24/Aug/2025 21:42:45] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
-2025-08-24 21:42:45,688 - INFO - Scan 34d5c113-2d55-4864-a93d-9ecec0ee020d and analysis completed successfully.
-2025-08-24 21:42:47,682 - INFO - Status request received for scan ID: 34d5c113-2d55-4864-a93d-9ecec0ee020d
-2025-08-24 21:42:47,684 - INFO - 127.0.0.1 - - [24/Aug/2025 21:42:47] "GET /scan/status/34d5c113-2d55-4864-a93d-9ecec0ee020d HTTP/1.1" 200 -
-2025-08-24 21:42:48,033 - INFO - Report request received for scan ID: 34d5c113-2d55-4864-a93d-9ecec0ee020d
-2025-08-24 21:42:48,102 - INFO - 127.0.0.1 - - [24/Aug/2025 21:42:48] "GET /scan/report/34d5c113-2d55-4864-a93d-9ecec0ee020d HTTP/1.1" 200 -
+2025-09-14 10:59:46,425 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-14 10:59:46,427 - INFO -  * Restarting with stat
+2025-09-14 10:59:46,635 - INFO - Starting backend server.
+2025-09-14 10:59:46,652 - WARNING -  * Debugger is active!
+2025-09-14 10:59:46,735 - INFO -  * Debugger PIN: 282-182-338
+2025-09-14 11:20:11,238 - INFO -  * Detected change in '/home/alex/Projects/dupepix/backend/backend.py', reloading
+2025-09-14 11:20:11,293 - INFO -  * Restarting with stat
+2025-09-14 11:20:11,474 - INFO - Starting backend server.
+2025-09-14 11:20:11,490 - WARNING -  * Debugger is active!
+2025-09-14 11:20:11,494 - INFO -  * Debugger PIN: 282-182-338

@@ -4,6 +4,7 @@
 
 interface Window {
   electronAPI: {
+    [x: string]: any;
     selectDirectory: () => Promise<string | null>;
   };
 }

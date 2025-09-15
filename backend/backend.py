@@ -12,36 +12,59 @@ import logging
 import create_photo_hash_list
 import photo_duplicates
 
+# --- Logging Configuration ---
+# This is located here to ensure it runs before Flask's default logging setup.
+# 1. Create a timestamp string for the log filename.
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+log_filename = f"backend_{timestamp}.log"
+
+# 2. Configure the logging system.
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    filename=log_filename,
+    filemode='a'
+)
+# --- End of Logging Configuration ---
+
 app = Flask(__name__)
 CORS(app)
 
 def perform_scan_and_analysis(directory_path, scan_id):
-    progress_file_path = os.path.join(tempfile.gettempdir(), f"scan_progress_{scan_id}.json")
+    scan_directory = os.path.join(tempfile.gettempdir(), f"scan_progress_{scan_id}.json")
     output_path = os.path.join(tempfile.gettempdir(), f"photo_duplicates_{scan_id}.json")
-    
+    logging.debug(f"directory path: {directory_path}")
     # Initialize the status to "scanning"
     try:
-        with open(progress_file_path, 'w') as f:
+        with open(scan_directory, 'w') as f:
             json.dump({"status": "scanning", "message": "Scan initiated."}, f)
     except IOError as e:
         logging.error(f"Failed to create initial progress file for scan {scan_id}: {e}")
         return
 
     try:
+        # Update status to "hashing"
+        with open(scan_directory, 'w') as f:
+            json.dump({"status": "hashing", "message": "Creating photo hashes..."}, f)
+            
         # Step 1: Generate hashes and get the list of photo data
         photo_hashes, _ = create_photo_hash_list.generate_photo_hashes(directory_path)
         
+        # Update status to "analyzing"
+        with open(scan_directory, 'w') as f:
+            json.dump({"status": "analyzing", "message": "Analyzing for duplicates..."}, f)
+
         # Step 2: Find duplicates and save the report
         photo_duplicates.find_duplicates(photo_hashes, output_path)
 
         # Final status update for success
-        with open(progress_file_path, 'w') as f:
+        with open(scan_directory, 'w') as f:
             json.dump({"status": "complete", "message": "Scan and analysis complete."}, f)
         logging.info(f"Scan {scan_id} and analysis completed successfully.")
         
     except Exception as e:
         # Final status update for error
-        with open(progress_file_path, 'w') as f:
+        with open(scan_directory, 'w') as f:
             json.dump({"status": "error", "message": f"Scan failed: {str(e)}"}, f)
         logging.error(f"An error occurred during scan {scan_id}: {e}")
 
@@ -80,11 +103,12 @@ def get_scan_status(scan_id):
     # No request.get_json() here
     logging.info(f"Status request received for scan ID: {scan_id}")
     
-    progress_file_path = os.path.join(tempfile.gettempdir(), f"scan_progress_{scan_id}.json")
-    logging.debug(f"Looking for progress file at: {progress_file_path}")
+    
+    scan_directory = os.path.join(tempfile.gettempdir(), f"scan_progress_{scan_id}.json")
+    logging.debug(f"Looking for progress file at: {scan_directory}")
     
     try:
-        with open(progress_file_path, 'r') as f:
+        with open(scan_directory, 'r') as f:
             progress = json.load(f)
         return jsonify(progress)
     except FileNotFoundError:
@@ -112,11 +136,8 @@ def get_scan_report(scan_id):
         return jsonify({"error": str(e)}), 500
     
 if __name__ == '__main__':
-    logging.basicConfig(
-        level=logging.DEBUG,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        filename='backend.log',
-        filemode='a'
-    )
+    print(f"Current Working Directory: {os.getcwd()}")
+
     logging.info("Starting backend server.")
+    print(f"Logging to file: {log_filename}")
     app.run(debug=True, port=5000)

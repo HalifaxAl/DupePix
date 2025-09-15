@@ -1,114 +1,42 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import HashingAnimation from './HashingAnimation'; // Import the animation component
 import './App.css';
+import { useScan } from './useScan'; // Import the new hook
 
 function App() {
+// State for UI elements that are specific to this component
   const [showSplash, setShowSplash] = useState(true);
-  const [scanDirectory, setScanDirectory] = useState<string>('');
-  const [statusMessage, setStatusMessage] = useState<string>('');
-  const [isScanning, setIsScanning] = useState(false);
-  const [scanId, setScanId] = useState<string | null>(null);
 
+  // Use custom hook to manage all scanning logic and state
+  const {
+    scanDirectory,
+    setScanDirectory,
+    statusMessage,
+    isScanning,
+    currentStatus,
+    startScan,
+  } = useScan();
+
+  // Effect for the splash screen timer
+  
+  // Effect for the splash screen timer
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSplash(false);
-    }, 5000); 
-
+    const timer = setTimeout(() => setShowSplash(false), 5000);
     return () => clearTimeout(timer);
   }, []);
 
+
+
+  // This function remains in the component because it directly interacts with the browser/Electron API
   const handleDirectorySelect = async () => {
-    if (window.electronAPI) {
-      try {
-        const directoryPath = await window.electronAPI.selectDirectory();
-        if (directoryPath) {
-          setScanDirectory(directoryPath);
-        }
-      } catch (error) {
-        setStatusMessage(`Error selecting directory: ${error}`);
-      }
-    } else {
-      const fallbackPath = prompt("Enter directory path (e.g., C:\\Photos or /home/user/pictures/)");
-      if (fallbackPath) {
-        setScanDirectory(fallbackPath);
-      }
-    }
-  };
-
-  const pollScanStatus = async (currentScanId: string) => {
-    const intervalId = setInterval(async () => {
-      try {
-        const response = await fetch(`http://localhost:5000/scan/status/${currentScanId}`);
-        const data = await response.json();
-
-        if (data.status === 'complete') {
-          clearInterval(intervalId);
-          setStatusMessage(`Scan complete! Found ${data.total} files.`);
-          setIsScanning(false);
-          fetchDuplicateReport(currentScanId);
-        } else if (data.status === 'error') {
-            clearInterval(intervalId);
-            setStatusMessage(`Scan failed: ${data.message}`);
-            setIsScanning(false);
-        } else {
-          setStatusMessage(`Scanning... Processed ${data.processed} of ${data.total} files.`);
-        }
-      } catch (error) {
-        setStatusMessage(`Error fetching status: ${error}`);
-        clearInterval(intervalId);
-        setIsScanning(false);
-      }
-    }, 2000);
-  };
-  
-  const fetchDuplicateReport = async (currentScanId: string) => {
-      try {
-          const response = await fetch(`http://localhost:5000/scan/report/${currentScanId}`);
-          const data = await response.json();
-          console.log("Received report data:", data);
-          setStatusMessage("Report retrieved successfully. Check console for details.");
-      } catch (error) {
-          setStatusMessage(`Error retrieving report: ${error}`);
-      }
-  };
-
-  const startScan = async () => {
-    if (!scanDirectory) {
-      setStatusMessage("Please select a directory first.");
-      return;
-    }
-
-    setStatusMessage('Initiating scan...');
-    setIsScanning(true);
-    setScanId(null);
-
     try {
-      const response = await fetch('http://localhost:5000/scan', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ scan_directory: scanDirectory }),
-      });
-
-      if (response.ok) {
-        const responseData = await response.json();
-        const newScanId = responseData.scan_id;
-        
-      if (newScanId) {
-        setScanId(newScanId);
-        pollScanStatus(newScanId);
-      } else {
-        setStatusMessage("Scan initiated, but no scan ID was returned.");
-        setIsScanning(false);
+      const directoryPath = await window.electronAPI.selectDirectory();
+      if (directoryPath) {
+        setScanDirectory(directoryPath); // Set state using the function from our hook
       }
-    } else {
-      const errorData = await response.json();
-      setStatusMessage(`Error: ${errorData.error}`);
-      setIsScanning(false);
-    }
     } catch (error) {
-      setStatusMessage(`Error connecting to backend: ${error}`);
-      setIsScanning(false);
+      // We could also return `setStatusMessage` from the hook to display this error
+      console.error(`Error selecting directory: ${error}`);
     }
   };
 
@@ -120,22 +48,24 @@ function App() {
     );
   }
 
+  // The JSX remains almost identical, but it's now powered by the clean hook
   return (
     <div className="App">
       <header className="App-header">
         <h1>DupePix</h1>
         <p>
-          Selected Directory: 
-          <strong>
-            {scanDirectory || 'None selected'}
-          </strong>
+          Selected Directory: <strong>{scanDirectory || 'None selected'}</strong>
         </p>
         <button onClick={handleDirectorySelect} className="select-dir-button">
           Select Directory
         </button>
         <button onClick={startScan} className="scan-button" disabled={!scanDirectory || isScanning}>
-          Start Scan
+          {isScanning ? 'Scanning...' : 'Start Scan'}
         </button>
+        
+        {/* Show animation when hashing */}
+        {currentStatus === 'hashing' && <HashingAnimation />}
+
         <p className="status-message">{statusMessage}</p>
       </header>
     </div>

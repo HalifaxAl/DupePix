@@ -1,26 +1,34 @@
-# Python
-__pycache__/
-*.py[cod]
+# IDE and Operating System files
+.vscode/
+.idea/
+.DS_Store
 
-# Generated files
-photo_hashes*.json
-photo_duplicates*.json
+# Python / Backend specific
+# Ignore the virtual environment folder
+venv/
+# Ignore Python's cache and compiled files
+__pycache__/
+*.pyc
+# Ignore log files created by the backend
 *.log
 
-# Operating System files
-.DS_Store
-Thumbs.db
+# Don't store any of the photo libraries
+backend/photo_hashes_*.json
+backend/scan_progress_*.json
 
-# Virtual environments
-.venv/
-venv/
-env/
--------------------------
-# General
-.env
-
-# Node.js
+# Node.js / Frontend / Electron specific
+# Ignore all node_modules directories
 node_modules/
-build/
-dist/
-.npm
+# Ignore build output folders
+/frontend/build
+/electron/dist
+# Ignore npm debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+# Ignore all .env files, but keep the example file if you create one
+.env
+.env.*
+!.env.example
