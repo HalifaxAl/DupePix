@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "build:electron": "tsc",
-    "dev": "npm run build:electron && concurrently \"cd ../frontend && npm start\" \"electron .\""
+    "dev": "npm run build:electron && concurrently \"cd ../frontend && npm run dev\" \"electron .\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
