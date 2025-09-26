@@ -1,0 +1,31 @@
+/* ...existing App.css styles... */
+
+.directory-display-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  text-align: left;
+  width: 80%;
+  max-width: 500px;
+  background-color: #f9f9f9;
+}
+
+.directory-display-box .box-label {
+  font-size: 0.8em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.directory-display-box .box-content {
+  font-weight: bold;
+  word-wrap: break-word; /* Helps with very long directory paths */
+}
+
+/* Add a clear visual style for disabled buttons */
+button:disabled {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+  border-color: #ccc;
+}

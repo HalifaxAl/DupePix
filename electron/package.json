@@ -1,5 +1,5 @@
 {
-  "name": "dupepix-frontend",
+  "name": "dupepix-electron",
   "version": "0.1.0",
   "private": true,
   "main": "dist/main.js",
@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
-    "electron": "^28.2.2",
+    "electron": "^28.2.3",
     "typescript": "^5.9.2"
   }
 }

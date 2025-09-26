@@ -8,6 +8,5 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["./**/*.ts"], // Only compile .ts files in this directory
-  "exclude": ["node_modules"]
+  "include": ["main.ts", "preload.ts"]
 }
