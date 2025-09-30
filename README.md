@@ -1,33 +1,51 @@
 # DupePix: A Photo Management Tool
 
-DupePix is a full-stack desktop application designed to help you find and manage duplicate photos on your computer. The application uses a Python backend to scan a specified directory and identify duplicates, and an Electron/React frontend for a user-friendly experience.
+DupePix is a desktop application designed to help you find and manage duplicate images within a selected directory. It uses file hashing to accurately identify identical images, providing a simple and effective way to clean up your photo collections.
 
 ## Features
 
-- **Splash Screen:** A branded splash screen is displayed on startup.
-- **Native Directory Selection:** Uses the operating system's native file dialog to select a directory.
-- **Photo Hashing & Analysis:** The backend processes photos to generate hashes and find duplicates.
-- **User Feedback:** The frontend provides real-time status updates on the scanning process.
+*   **Directory Selection:** Natively select any directory on your computer to scan for images.
+*   **Duplicate Detection:** Utilizes a Python backend to perform an efficient hash-based scan, accurately identifying identical image files.
+*   **Interactive UI:** A clean user interface built with React shows the scan progress, including a real-time count of hashed files.
+*   **Visual Feedback:** An engaging animation provides visual feedback during the hashing process.
+*   **Results Display:** Duplicate image sets are clearly displayed for review.
+*   **Restart Functionality:** Easily start a new scan with the "Start Over" button, which resets the application to its initial state.
 
-## Technology Stack
+## Core Technologies
 
--   **Frontend:** React, TypeScript
--   **Desktop Framework:** Electron, TypeScript
--   **Backend:** Python, Flask
+This project is built with a modern stack, separating the user interface, desktop integration, and backend logic into distinct parts:
+
+*   **Frontend:** [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/) and [Vite](https://vitejs.dev/) for a fast, modern user interface.
+*   **Desktop App:** [Electron](https://www.electronjs.org/) to wrap the web frontend into a cross-platform desktop application.
+*   **Backend:** [Python](https://www.python.org/) with [Flask](https://flask.palletsprojects.com/) to handle the computationally intensive task of scanning directories and hashing image files.
 -   **Styling:** CSS
-
 ## Project Structure
 
-The project is structured as a monorepo with three main components:
+The project is structured as a monorepo with three main components. Key files and directories are highlighted below:
 
 ```
 DupePix/
-├── backend/        # Python Flask server for image processing
-├── electron/       # Electron wrapper for the desktop application
-├── frontend/       # React/TypeScript user interface
+├── backend/
+│   ├── backend.py        # Main Flask application file
+│   └── requirements.txt  # Python dependencies
+│
+├── electron/
+│   ├── main.ts           # Electron main process
+│   ├── preload.ts        # Script to bridge main and renderer processes
+│   └── package.json      # Electron-specific dependencies and scripts
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/   # Reusable React components
+│   │   ├── App.tsx       # Main application component
+│   │   └── useScan.ts    # Hook for backend communication
+│   └── package.json      # Frontend dependencies and scripts
+│
 ├── .gitignore
 └── README.md
 ```
+
+This extended view provides much more context about where the important logic resides in each part of the application, which is extremely valuable for anyone looking to understand or contribute to the code.
 
 ## Getting Started
 
@@ -35,57 +53,69 @@ DupePix/
 
 You will need the following installed on your system:
 
-*   **Python 3.8+**
-*   **Node.js & npm** (version 14 or higher is recommended)
+*   [Node.js](https://nodejs.org/) (which includes npm)
+*   [Python 3](https://www.python.org/downloads/) and `pip`
 
-### Installation
+## Setup and Installation
 
-1.  **Clone the repository:**
+Follow these steps to get the project running on your local machine.
+
+1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/your-username/dupepix.git
+    git clone https://github.com/HalifaxAl/dupepix.git
     cd dupepix
     ```
 
-2.  **Set up the Backend:**
-    Create and activate a Python virtual environment, and install the required packages.
-    ```bash
-    # From the project root directory (dupepix/)
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r backend/requirements.txt
-    ```
+2.  **Set Up the Python Backend**
+    *   Create and activate a virtual environment:
+        ```bash
+        python3 -m venv venv
+        source venv/bin/activate
+        ```
+    *   Install the required Python packages:
+        ```bash
+        pip install -r backend/requirements.txt
+        ```
 
-3.  **Set up the Frontend and Electron:**
-    Install the Node.js dependencies for both the React app and the Electron wrapper.
+3.  **Install Frontend Dependencies**
     ```bash
-    # Install frontend dependencies
     cd frontend
     npm install
+    ```
 
-    # Install Electron dependencies
+4.  **Install Electron Dependencies**
+    ```bash
     cd ../electron
     npm install
     ```
 
-## Usage
+## Running the Application
 
-To run the application for development, you will need two separate terminals running concurrently.
+To run DupePix, you need to start both the backend server and the Electron application in **separate terminals**.
 
-1.  **Start the Backend Server:**
-    From the project root directory (`dupepix/`), with the virtual environment activated:
+### Terminal 1: Start the Backend
+
+1.  Make sure you are in the project's root directory (`/dupepix`).
+2.  Activate the virtual environment if it's not already active:
     ```bash
     source venv/bin/activate
+    ```
+3.  Run the Flask server:
+    ```bash
     python backend/backend.py
     ```
-    The backend will start on `http://localhost:5000`.
+4.  The server will start on `http://127.0.0.1:5000`. Keep this terminal running.
 
-2.  **Start the Frontend & Electron App:**
-    In a new terminal, navigate to the `electron` directory and run the `dev` script:
+### Terminal 2: Start the Frontend & Electron App
+
+1.  In a **new terminal**, navigate to the `electron` directory:
     ```bash
     cd electron
+    ```
+2.  Run the `dev` script. This command will automatically build the necessary files, start the Vite development server for the frontend, and launch the Electron window.
+    ```bash
     npm run dev
     ```
-    This command will compile the Electron TypeScript files, then launch both the React development server and the Electron application window.
 
 ## Contributing
 

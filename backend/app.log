@@ -1414,3 +1414,5 @@
 2025-09-30 00:41:39,638 - INFO - Received scan request.
 2025-09-30 00:41:39,639 - INFO - Scan 3178d875-1b48-4be4-8685-251013d58640 initiated for directory: /mnt/c/Users/Alex/Pictures
 2025-09-30 00:41:39,640 - INFO - 127.0.0.1 - - [30/Sep/2025 00:41:39] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-30 00:52:44,934 - INFO - Scan b23892eb-0297-414d-b54c-5f3e50671f27 and analysis completed successfully.
+2025-09-30 00:52:44,951 - INFO - Scan 3178d875-1b48-4be4-8685-251013d58640 and analysis completed successfully.
