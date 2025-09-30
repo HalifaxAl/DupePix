@@ -1347,3 +1347,70 @@
 2025-09-14 11:20:11,474 - INFO - Starting backend server.
 2025-09-14 11:20:11,490 - WARNING -  * Debugger is active!
 2025-09-14 11:20:11,494 - INFO -  * Debugger PIN: 282-182-338
+2025-09-26 22:45:05,837 - INFO - Starting backend server.
+2025-09-26 22:45:05,917 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-26 22:45:05,917 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-26 22:45:05,918 - INFO -  * Restarting with stat
+2025-09-26 22:45:06,119 - INFO - Starting backend server.
+2025-09-26 22:45:06,140 - WARNING -  * Debugger is active!
+2025-09-26 22:45:06,192 - INFO -  * Debugger PIN: 645-811-771
+2025-09-28 23:06:50,158 - INFO - Starting backend server.
+2025-09-28 23:06:50,620 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-28 23:06:50,621 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-28 23:06:50,622 - INFO -  * Restarting with stat
+2025-09-28 23:06:50,790 - INFO - Starting backend server.
+2025-09-28 23:06:50,807 - WARNING -  * Debugger is active!
+2025-09-28 23:06:50,919 - INFO -  * Debugger PIN: 645-811-771
+2025-09-28 23:10:12,539 - INFO - 127.0.0.1 - - [28/Sep/2025 23:10:12] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-28 23:10:12,542 - INFO - Received scan request.
+2025-09-28 23:10:12,542 - INFO - Scan cedfbf67-e002-43e3-9c1d-970aabc30256 initiated for directory: /home/alex/Projects/dupepix
+2025-09-28 23:10:12,543 - INFO - 127.0.0.1 - - [28/Sep/2025 23:10:12] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-28 23:10:25,596 - INFO - Scan cedfbf67-e002-43e3-9c1d-970aabc30256 and analysis completed successfully.
+2025-09-29 09:50:23,680 - INFO - 127.0.0.1 - - [29/Sep/2025 09:50:23] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-29 09:50:23,698 - INFO - Received scan request.
+2025-09-29 09:50:23,703 - INFO - Scan 7ca1d2b7-961c-48fa-99dc-2ae7c935f5f3 initiated for directory: /home/alex/Projects/dupepix
+2025-09-29 09:50:23,706 - INFO - 127.0.0.1 - - [29/Sep/2025 09:50:23] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-29 09:50:37,973 - INFO - Scan 7ca1d2b7-961c-48fa-99dc-2ae7c935f5f3 and analysis completed successfully.
+2025-09-29 10:00:53,998 - INFO - Starting backend server.
+2025-09-29 10:00:54,405 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-29 10:00:54,405 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-29 10:00:54,407 - INFO -  * Restarting with stat
+2025-09-29 10:00:54,642 - INFO - Starting backend server.
+2025-09-29 10:00:54,660 - WARNING -  * Debugger is active!
+2025-09-29 10:00:54,720 - INFO -  * Debugger PIN: 645-811-771
+2025-09-29 10:02:30,982 - INFO - 127.0.0.1 - - [29/Sep/2025 10:02:30] "[33mGET / HTTP/1.1[0m" 404 -
+2025-09-29 10:02:31,442 - INFO - 127.0.0.1 - - [29/Sep/2025 10:02:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-29 10:04:43,831 - INFO - 127.0.0.1 - - [29/Sep/2025 10:04:43] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-29 10:04:43,836 - INFO - Received scan request.
+2025-09-29 10:04:43,837 - INFO - Scan 40d2d61a-d196-4385-9638-2d40634be1a9 initiated for directory: /home/alex/Projects/dupepix/backend
+2025-09-29 10:04:43,843 - INFO - 127.0.0.1 - - [29/Sep/2025 10:04:43] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-29 10:04:43,894 - INFO - Scan 40d2d61a-d196-4385-9638-2d40634be1a9 and analysis completed successfully.
+2025-09-29 23:07:56,456 - INFO - Starting backend server.
+2025-09-29 23:07:56,624 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-29 23:07:56,625 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-29 23:07:56,627 - INFO -  * Restarting with stat
+2025-09-29 23:07:56,800 - INFO - Starting backend server.
+2025-09-29 23:07:56,814 - WARNING -  * Debugger is active!
+2025-09-29 23:07:56,863 - INFO -  * Debugger PIN: 665-842-547
+2025-09-30 00:18:47,652 - INFO - 127.0.0.1 - - [30/Sep/2025 00:18:47] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-30 00:18:47,659 - INFO - Received scan request.
+2025-09-30 00:18:47,663 - INFO - Scan 68cd413c-4a08-4d8f-894d-f116585bb2da initiated for directory: /home/alex/Projects/dupepix
+2025-09-30 00:18:47,667 - INFO - 127.0.0.1 - - [30/Sep/2025 00:18:47] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-30 00:18:48,583 - INFO - Scan 68cd413c-4a08-4d8f-894d-f116585bb2da and analysis completed successfully.
+2025-09-30 00:32:50,075 - INFO - 127.0.0.1 - - [30/Sep/2025 00:32:50] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-30 00:32:50,078 - INFO - Received scan request.
+2025-09-30 00:32:50,080 - INFO - Scan ebc34cec-b8f8-4d23-993a-6f062b1916dc initiated for directory: /mnt/c/Users/Alex/Pictures/2009-01
+2025-09-30 00:32:50,081 - INFO - 127.0.0.1 - - [30/Sep/2025 00:32:50] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-30 00:32:50,256 - INFO - Scan ebc34cec-b8f8-4d23-993a-6f062b1916dc and analysis completed successfully.
+2025-09-30 00:41:28,169 - INFO - 127.0.0.1 - - [30/Sep/2025 00:41:28] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-30 00:41:28,172 - INFO - Received scan request.
+2025-09-30 00:41:28,174 - INFO - Scan b23892eb-0297-414d-b54c-5f3e50671f27 initiated for directory: /mnt/c/Users/Alex/Pictures
+2025-09-30 00:41:28,175 - INFO - 127.0.0.1 - - [30/Sep/2025 00:41:28] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -
+2025-09-30 00:41:39,635 - INFO - 127.0.0.1 - - [30/Sep/2025 00:41:39] "OPTIONS /scan HTTP/1.1" 200 -
+2025-09-30 00:41:39,638 - INFO - Received scan request.
+2025-09-30 00:41:39,639 - INFO - Scan 3178d875-1b48-4be4-8685-251013d58640 initiated for directory: /mnt/c/Users/Alex/Pictures
+2025-09-30 00:41:39,640 - INFO - 127.0.0.1 - - [30/Sep/2025 00:41:39] "[35m[1mPOST /scan HTTP/1.1[0m" 202 -

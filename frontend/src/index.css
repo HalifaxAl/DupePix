@@ -26,3 +26,66 @@ button {
 button:hover {
   background-color: #0b5ed7;
 }
+
+.scan-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hashing-status {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.hashing-status span:first-child {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.status-message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+.restart-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.restart-button:hover {
+  background-color: #21a1f1;
+}
+
+.directory-display-box {
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgba(97, 218, 251, 0.1);
+}

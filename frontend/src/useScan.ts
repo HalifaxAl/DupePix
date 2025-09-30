@@ -1,49 +1,46 @@
 import { useState } from 'react';
 
-// Define the structure of a duplicate set
-interface DuplicateSet {
-  id: string;
-  duplicates: { id: string; url: string }[];
-}
-
 export const useScan = () => {
-  const [scanStatus, setScanStatus] = useState<string>('');
-  const [isScanning, setIsScanning] = useState<boolean>(false);
-  const [duplicateSets, setDuplicateSets] = useState<DuplicateSet[]>([]);
+    const [scanStatus, setScanStatus] = useState('');
+    const [isScanning, setIsScanning] = useState(false);
+    const [duplicateSets, setDuplicateSets] = useState<any[]>([]);
 
-  const startScan = async (directory: string) => {
-    setIsScanning(true);
-    setScanStatus('Starting scan...');
-    setDuplicateSets([]); // Clear previous results
+    const startScan = async (directory: string) => {
+        setIsScanning(true);
+        setScanStatus('Starting scan...');
+        setDuplicateSets([]); // Clear previous results
 
-    try {
-      const response = await fetch('http://localhost:5000/scan', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ scan_directory: directory }),
-      });
+        try {
+            const response = await fetch('http://127.0.0.1:5000/scan', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ directory }),
+            });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Backend scan failed');
-      }
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
 
-      const results = await response.json();
-      setScanStatus('Scan complete!');
-      // Here you would process the results to fit the DuplicateSet structure
-      // For now, we'll assume the backend returns data in the correct format
-      setDuplicateSets(results.duplicate_sets || []);
+            const data = await response.json();
+            setDuplicateSets(data.duplicates || []);
+            setScanStatus(data.message || 'Scan complete!');
+        } catch (error) {
+            console.error('Error during scan:', error);
+            setScanStatus('Error during scan. See console for details.');
+        } finally {
+            setIsScanning(false);
+        }
+    };
 
-    } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred.';
-      setScanStatus(`Error: ${errorMessage}`);
-      console.error('Scan error:', error);
-    } finally {
-      setIsScanning(false);
-    }
-  };
+    // Add this new function to reset the hook's state
+    const resetScan = () => {
+        setScanStatus('');
+        setIsScanning(false);
+        setDuplicateSets([]);
+    };
 
-  return { scanStatus, isScanning, duplicateSets, startScan };
+    // Expose the new function
+    return { scanStatus, isScanning, duplicateSets, startScan, resetScan };
 };

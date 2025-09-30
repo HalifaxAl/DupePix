@@ -5,13 +5,16 @@ interface FileUploadProps {
 }
 
 const FileUpload: React.FC<FileUploadProps> = ({ onDirectoryChange }) => {
+  console.log('--- FileUpload FileUploadProps called---');
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleClick = () => {
+    console.log('--- FileUpload handleClick called---');
     inputRef.current?.click();
   };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log('--- FileUpload handleChange called---');
     onDirectoryChange(event.target.files);
   };
 
