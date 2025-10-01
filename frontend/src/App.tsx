@@ -1,66 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import FileUpload from './components/FileUpload';
+import React, { useState } from 'react';
 import DuplicateSet from './components/DuplicateSet';
-import ImageGallery from './components/ImageGallery';
 import './index.css';
 import { useScan } from './useScan';
 import HashingFunnel from './components/HashingFunnel/HashingFunnel';
 
-// Define types for our data structures
+// These interfaces are for the final results, not the scan status
 interface Duplicate {
-	id: string;
-	url: string; // In a real app, this might be a path or an ID to fetch the image
+    id: string;
+    url: string;
 }
 
 interface DuplicateSetData {
-	id: string;
-	duplicates: Duplicate[];
-}
-
-// Add a type for notifications
-interface Notification {
-	message: string;
-	type: 'success' | 'error';
+    id: string;
+    duplicates: Duplicate[];
 }
 
 function App() {
     const [selectedDirectory, setSelectedDirectory] = useState<string | null>(null);
     const [scanCompleted, setScanCompleted] = useState(false);
-    const [hashedFileCount, setHashedFileCount] = useState(0);
+    
+    const { 
+        scanStatus, 
+        isScanning, 
+        duplicateSets, 
+        startScan, 
+        resetScan, 
+        hashedFileCount, 
+        totalFiles // Destructure the totalFiles count
+    } = useScan();
 
-    // Get the new resetScan function from the hook
-    const { scanStatus, isScanning, duplicateSets, startScan, resetScan } = useScan();
-
-    // This effect will simulate the file count increasing during a scan
-    useEffect(() => {
-        let interval: ReturnType<typeof setInterval> | undefined;
-        if (isScanning) {
-            // Reset count at the start of a new scan
-            setHashedFileCount(0);
-            interval = setInterval(() => {
-                // Increment the count to simulate hashing
-                setHashedFileCount(prevCount => prevCount + Math.floor(Math.random() * 5) + 1);
-            }, 150); // Update every 150ms
-        }
-
-        // Cleanup function to clear interval when scanning stops or component unmounts
-        return () => {
-            if (interval) {
-                clearInterval(interval);
-            }
-        };
-    }, [isScanning]); // This effect runs whenever 'isScanning' changes
-
+    // The old simulation useEffect block should be completely gone.
 
     const handleDirectorySelect = async () => {
-         console.log('--- App:handleDirectorySelect called---');  
-		const electronAPI = (window as any).electronAPI;
-		if (electronAPI) {
-		  const path = await electronAPI.selectDirectory();
-		  if (path) {
-			setSelectedDirectory(path);
-		  }
-		}
+        const path = await window.electronAPI.selectDirectory();
+        if (path) {
+            setSelectedDirectory(path);
+        }
     };
 
     const handleStartScan = () => {
@@ -72,12 +47,10 @@ function App() {
         }
     };
 
-    // This function will reset everything
     const handleRestart = () => {
         setSelectedDirectory(null);
         setScanCompleted(false);
-        setHashedFileCount(0);
-        resetScan(); // Call the reset function from the hook
+        resetScan();
     };
 
     return (
@@ -85,7 +58,6 @@ function App() {
             <header className="App-header">
                 <h1>DupePix</h1>
 
-                {/* Only show the restart button after a scan is complete and we are not scanning */}
                 {!isScanning && scanCompleted && (
                     <button onClick={handleRestart} className="restart-button">
                         Start Over
@@ -106,18 +78,16 @@ function App() {
                     </button>
                 </div>
 
-                {/* Show the new funnel animation ONLY when scanning */}
                 {isScanning && <HashingFunnel />}
 
-                {/* Display the hashing count ONLY when scanning */}
+                {/* This is the key display change */}
                 {isScanning && (
                     <div className="hashing-status">
-                        <span>Number of files hashed:</span>
-                        <span>{hashedFileCount}</span>
+                        <span>Files Hashed:</span>
+                        <span>{hashedFileCount} / {totalFiles}</span>
                     </div>
                 )}
 
-                {/* Show the final status message ONLY after the scan is complete */}
                 {!isScanning && scanCompleted && <p className="status-message">{scanStatus}</p>}
 
                 {!isScanning && duplicateSets.length > 0 && (

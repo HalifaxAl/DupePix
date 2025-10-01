@@ -1,88 +1,92 @@
 import json
-import os
-from datetime import datetime
-from collections import defaultdict
 import logging
-# Add this at the top of the file
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    filename='app.log',
-    filemode='a'
-)    
+import uuid
+from datetime import datetime
 
-def find_duplicates(input_data, output_path):
-    hash_to_path = defaultdict(list)
-    for photo in input_data:
-        hash_to_path[photo['hash']].append(photo)
+def find_duplicates(photo_hashes, output_path):
+    """
+    Identifies duplicate photos from a dictionary of hashes and saves them to a file.
 
-    duplicates_list = []
-    unique_hashes = 0
-    total_files = 0
-    total_storage_consumed = 0
+    Args:
+        photo_hashes (dict): A dictionary mapping a hash to a list of file paths.
+                             Example: {'hash123': ['path/a.jpg', 'path/b.jpg']}
+        output_path (str): The path to save the JSON report of duplicates.
+    """
+    logging.debug("--- find_duplicates function started ---")
+    
+    # --- IMPROVEMENT 1: Input Validation ---
+    if not isinstance(photo_hashes, dict):
+        logging.error(f"Invalid input: photo_hashes is not a dictionary (type: {type(photo_hashes)}). Aborting.")
+        # We raise an exception to ensure the calling process knows something went wrong.
+        raise TypeError("photo_hashes must be a dictionary.")
 
-    for photo_hash, photos in hash_to_path.items():
-        if len(photos) > 1:
-            # Sort to keep the first one as the 'original'
-            photos.sort(key=lambda x: x['path'])
-            original = photos[0]
-            for duplicate in photos[1:]:
-                duplicate['original_path'] = original['path']
-                duplicates_list.append(duplicate)
+    # --- IMPROVEMENT 2: Added Contextual Logging ---
+    logging.debug(f"Received {len(photo_hashes)} unique hashes to analyze.")
+
+    duplicate_sets = []
+    
+    for photo_hash, paths in photo_hashes.items():
+        if len(paths) > 1:
+            logging.debug(f"Found duplicate set for hash {photo_hash}: {paths}")
             
-            unique_hashes += 1
-            total_files += len(photos)
-            total_storage_consumed += sum(p['size'] for p in photos)
-        else:
-            unique_hashes += 1
-            total_files += 1
-            total_storage_consumed += photos[0]['size']
+            formatted_duplicates = []
+            for path in paths:
+                formatted_duplicates.append({
+                    "id": str(uuid.uuid4()),
+                    "url": path
+                })
 
-    summary = {
-        'timestamp': datetime.now().isoformat(),
-        'total_files_processed': total_files,
-        'unique_photos_found': unique_hashes,
-        'duplicate_photos_found': len(duplicates_list),
-        'total_storage_consumed_bytes': total_storage_consumed
-    }
+            duplicate_sets.append({
+                "id": photo_hash,
+                "duplicates": formatted_duplicates
+            })
 
-    output_data = {
-        'summary': summary,
-        'duplicates': duplicates_list
-    }
+    output_data = {"duplicates": duplicate_sets}
+    
+    # --- IMPROVEMENT 3: Added "No Duplicates" Logging ---
+    if not duplicate_sets:
+        logging.info("Analysis complete: No duplicate sets were found.")
+    else:
+        logging.debug(f"Found {len(duplicate_sets)} total sets of duplicates.")
 
     try:
         with open(output_path, 'w') as f:
             json.dump(output_data, f, indent=4)
+        logging.info(f"Successfully wrote duplicate report to {output_path}")
     except IOError as e:
-        # Use logging instead of print for errors
-        print(f"Error writing to output file: {e}")
-        return None
-    except TypeError as e:
-        print(f"Error serializing data to JSON: {e}")
-        return None
+        logging.error(f"Failed to write duplicate report to {output_path}: {e}")
+        raise
 
-    return output_data
+    logging.debug("--- find_duplicates function finished ---")
 
 if __name__ == '__main__':
     import sys
-    # Command-line usage is still supported for local testing
+    
+    # --- IMPROVEMENT 4: Logging config moved here ---
+    # This ensures it only runs for standalone execution, not when imported.
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler("photo_duplicates.log", mode='a'),
+            logging.StreamHandler() # Also log to console
+        ]
+    )
+
     if len(sys.argv) > 1:
         input_file = sys.argv[1]
         output_file = sys.argv[2] if len(sys.argv) > 2 else f"photo_duplicates_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json"
 
         try:        
             with open(input_file, 'r') as f:
+                # In a real scenario, the input here would be the output of create_photo_hash_list
+                # which is a dictionary of hash -> [paths]
                 data = json.load(f)
         except (IOError, json.JSONDecodeError) as e:
             logging.error(f"Error reading or parsing input file: {e}")
-            print(f"Error reading or parsing input file: {e}")
             sys.exit(1)
-        
         
         find_duplicates(data, output_file)
         logging.info(f"Duplicate report saved to {output_file}")
-        print(f"Duplicate report saved to {output_file}")
     else:
         logging.error("Usage: python photo_duplicates.py <input_hash_file> [output_file]")
-        print("Usage: python photo_duplicates.py <input_hash_file> [output_file]")
