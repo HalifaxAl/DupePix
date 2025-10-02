@@ -21,12 +21,26 @@ interface ErrorStatus {
 // Create a "union" type of all possible status objects
 type ScanStatus = HashingStatus | CompleteStatus | ErrorStatus;
 
+// Add a new interface for the deletion result
+interface FailedFile {
+    path: string;
+    reason: string;
+}
+
+interface DeletionResult {
+    message: string;
+    deleted: string[];
+    failed: FailedFile[];
+}
+
 export const useScan = () => {
     const [scanStatus, setScanStatus] = useState('');
     const [isScanning, setIsScanning] = useState(false);
     const [duplicateSets, setDuplicateSets] = useState<any[]>([]);
     const [hashedFileCount, setHashedFileCount] = useState(0);
     const [totalFiles, setTotalFiles] = useState(0);
+    // New state to hold the outcome of the delete operation
+    const [deletionResult, setDeletionResult] = useState<DeletionResult | null>(null);
 
     const pollingRef = useRef<number | undefined>();
 
@@ -110,6 +124,30 @@ export const useScan = () => {
         }
     };
 
+    const deleteFiles = async (filesToDelete: string[]) => {
+        console.log('%c[Deletion] Attempting to delete files:', 'color: red', filesToDelete);
+        try {
+            const response = await fetch('http://127.0.0.1:5000/delete_photos', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ files: filesToDelete }),
+            });
+            const result: DeletionResult = await response.json();
+            console.log('%c[Deletion] Received result:', 'color: red', result);
+            setDeletionResult(result); // Store the result in state
+            return result;
+        } catch (error) {
+            console.error('CRITICAL ERROR during file deletion:', error);
+            const errorResult = {
+                message: 'A critical network or server error occurred during deletion.',
+                deleted: [],
+                failed: filesToDelete.map(f => ({ path: f, reason: 'Network/server error' }))
+            };
+            setDeletionResult(errorResult);
+            return errorResult;
+        }
+    };
+
     const resetScan = () => {
         console.log('--- resetScan called ---');
         setScanStatus('');
@@ -117,8 +155,20 @@ export const useScan = () => {
         setDuplicateSets([]);
         setHashedFileCount(0);
         setTotalFiles(0);
+        setDeletionResult(null); // Clear deletion results on reset
         clearInterval(pollingRef.current);
     };
 
-    return { scanStatus, isScanning, duplicateSets, startScan, resetScan, hashedFileCount, totalFiles };
+    // Expose the new state and function
+    return { 
+        scanStatus, 
+        isScanning, 
+        duplicateSets, 
+        startScan, 
+        resetScan, 
+        hashedFileCount, 
+        totalFiles,
+        deleteFiles,      // <-- new function
+        deletionResult    // <-- new state
+    };
 };

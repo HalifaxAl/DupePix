@@ -11,6 +11,7 @@ __pycache__/
 *.pyc
 # Ignore log files created by the backend
 *.log
+*.swp
 
 # Don't store any of the photo libraries
 backend/photo_hashes_*.json

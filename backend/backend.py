@@ -11,6 +11,7 @@ import logging
 
 import create_photo_hash_list
 import photo_duplicates
+import file_operations # <-- Import the new module
 
 # --- Logging Configuration ---
 # This is located here to ensure it runs before Flask's default logging setup.
@@ -196,7 +197,45 @@ def get_scan_results(scan_id):
     except Exception as e:
         logging.error(f"Error serving report for scan {scan_id}: {e}")
         return jsonify({"error": str(e)}), 500
+
+@app.route('/delete_photos', methods=['POST'])
+def delete_photos():
+    logging.info("--- Endpoint /delete_photos HIT ---")
     
+    try:
+        data = request.get_json()
+        if not data or 'files' not in data:
+            logging.warning("Delete request failed: 'files' key missing from JSON.")
+            return jsonify({"error": "Request must include a 'files' key."}), 400
+
+        files_to_delete = data['files']
+        
+        if not isinstance(files_to_delete, list):
+            logging.warning("Delete request failed: 'files' is not a list.")
+            return jsonify({"error": "'files' must be a list of strings."}), 400
+
+        # --- IMPROVEMENT 1: Validate the contents of the list ---
+        if not all(isinstance(f, str) for f in files_to_delete):
+            logging.warning("Delete request failed: not all items in 'files' are strings.")
+            return jsonify({"error": "All items in 'files' must be strings."}), 400
+
+        # --- IMPROVEMENT 2: Wrap the business logic call in a try/except block ---
+        deleted_files, failed_files = file_operations.delete_files_from_disk(files_to_delete)
+
+        response = {
+            "message": f"Deletion process complete. Deleted {len(deleted_files)}, failed {len(failed_files)}.",
+            "deleted": deleted_files,
+            "failed": failed_files
+        }
+        logging.info(f"Delete operation summary: {response['message']}")
+        return jsonify(response), 200
+
+    except Exception as e:
+        # This will catch any unexpected errors from the logic above.
+        logging.error(f"An unexpected error occurred in /delete_photos endpoint: {e}", exc_info=True)
+        return jsonify({"error": "An unexpected server error occurred."}), 500
+
+
 if __name__ == '__main__':
     print(f"Current Working Directory: {os.getcwd()}")
     logging.info("--- Starting Flask Backend Server ---")

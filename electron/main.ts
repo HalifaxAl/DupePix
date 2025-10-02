@@ -43,7 +43,8 @@ function createWindow() {
     height: 600,
     webPreferences: {
       sandbox: false,
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      webSecurity: false // ADD THIS LINE to the existing webPreferences object.
     }
   });
 
